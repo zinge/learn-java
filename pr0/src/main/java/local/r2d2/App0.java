@@ -4,9 +4,9 @@ import java.util.Scanner;
 import static local.r2d2.Constants.LOOP_END;
 import static local.r2d2.Constants.LOOP_STEP;
 
-public class App0
+class App0
 {
-  static int getEnd(int end) {
+  private static int getEnd(int end) {
     if(end < 0) {
       return LOOP_END;
     }
@@ -14,7 +14,7 @@ public class App0
     return end;
   }
 
-  static int getStep(int step, int end) {
+  private static int getStep(int step, int end) {
     if(step > end || step < 0) {
       return LOOP_STEP;
     }

@@ -2,8 +2,8 @@ package local.r2d2;
 
 import java.util.Arrays;
 
-public class Arr0 {
-  static void printResult(String label, String result) {
+class Arr0 {
+  private static void printResult(String label, String result) {
     System.out.println(label);
     System.out.println(result + "\n");
   }
@@ -12,7 +12,7 @@ public class Arr0 {
     String[] arr = {"one", "two", "three"};
 
     System.out.println("println Array");
-    System.out.println(arr + "\n");
+    System.out.println(Arrays.toString(arr) + "\n");
 
     printResult("Array to string, str[]", Arrays.toString(arr));
 

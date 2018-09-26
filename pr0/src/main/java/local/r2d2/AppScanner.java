@@ -1,7 +1,7 @@
 package local.r2d2;
 import java.util.Scanner;
 
-public class AppScanner
+class AppScanner
 {
   public static void main(String[] args)
   {
