@@ -1,4 +1,6 @@
 package local.r2d2;
+import org.jetbrains.annotations.Contract;
+
 import java.util.Scanner;
 
 import static local.r2d2.Constants.LOOP_END;
@@ -6,7 +8,8 @@ import static local.r2d2.Constants.LOOP_STEP;
 
 public class App0
 {
-  static int getEnd(int end) {
+  @Contract(pure = true)
+  private static int getEnd(int end) {
     if(end < 0) {
       return LOOP_END;
     }
@@ -14,7 +17,8 @@ public class App0
     return end;
   }
 
-  static int getStep(int step, int end) {
+  @org.jetbrains.annotations.Contract(pure = true)
+  private static int getStep(int step, int end) {
     if(step > end || step < 0) {
       return LOOP_STEP;
     }
